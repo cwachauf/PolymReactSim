@@ -10,3 +10,15 @@ SGP_Plot_Number_Fractions <- function(p,N_max)
   df_nfs <- data.frame(Ns,ps)
   return(df_nfs)
 }
+
+## Simulate_Step_Growth_Polym(init_numbers,num_iters,N_max,T_max)
+## simulates the time evolution of a system 
+Simulate_Step_Growth_Polym <- function(init_numbers,num_iters,N_max,T_max)
+{
+  ## calculate the number of reactions:
+  num_reactions <- N_max*(N_max+1.0)/2.0;
+  print("number of reactions: ")
+  print(num_reactions)
+  ## calculate the state-change vectors:
+  scv <- matrix()
+}
